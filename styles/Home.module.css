@@ -1,15 +1,106 @@
-.container {
-  padding: 0 2rem;
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 78vh;
+  flex: 1;
+  gap: 2rem;
+  padding: 0 8rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.iconContainer {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  animation: up-down 1s ease infinite;
+  margin-bottom: 3rem;
+}
+
+/* Un elemento seguido de otro - abajo */
+.heroText {
+  min-width: 400px;
+}
+
+.heroTextMain {
+  font-size: 3.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+.heroTextSecondary {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.heroButton {
+  margin: 12px 0;
+  background-color: #2db97c !important;
+}
+
+.heroButton a {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: initial;
+  letter-spacing: 0.3px;
+}
+
+.heroImageContainer {
+  max-width: 450px;
+}
+
+.cardContainer {
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
+  /* flex-wrap: wrap; */
+  background: #fafafa;
+  padding: 2rem;
+}
+
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 3rem;
+}
+
+.servicesCardImage {
+  background-image: url("/services2.jpg");
+  width: 100%;
+  max-width: 400px;
+  background-size: cover;
+  /* background-position: left; */
+}
+.servicesCardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  flex-wrap: wrap;
+  background: #fafafa;
+  padding: 1.5rem 3rem;
+  max-width: 1027px;
+}
+
+.cardHeader {
+  width: 100%;
+}
+
+.cardHeader p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardHeader h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
 }
 
 .footer {
@@ -28,84 +119,69 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+/* Animations */
+
+@keyframes up-down {
+  0% {
+    transform: translateY(20px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
+/* Media Queries */
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+@media screen and (max-width: 920px) {
+  .heroImageContainer {
+    max-width: 350px;
+  }
 }
+@media screen and (max-width: 767px) {
+  .heroContainer {
+    justify-content: center;
+    padding: 0;
+  }
+  .heroImageContainer {
+    display: none;
+  }
+  .heroTextMain {
+    font-size: 60px;
+  }
+  .heroTextSecondary {
+    font-size: 1.25rem;
+  }
 
-.title,
-.description {
-  text-align: center;
+  .cardContainer {
+    flex-wrap: wrap;
+    padding: 2rem 0;
+  }
+
+  .heroContainer {
+    height: 43vh;
+    margin-top: 10rem;
+  }
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+@media screen and (max-width: 868px) {
+  .heroText {
+    min-width: 310px;
+  }
+  .heroImageContainer {
+    max-width: 300px;
+  }
 }
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+@media screen and (max-width: 1025px) {
+  .heroTextMain {
+    font-size: 45px;
+  }
 }
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+@media screen and (max-width: 1079px) {
+  .servicesCardImage {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {

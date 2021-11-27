@@ -1,0 +1,39 @@
+.navbar {
+  padding: 0 8rem;
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarLink {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navbarLogoContainer {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+  }
+  .navbarLogoContainer {
+    display: block;
+  }
+
+  .navbarLinkText {
+    display: none;
+  }
+}

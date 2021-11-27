@@ -1,0 +1,18 @@
+.servicesCard {
+  max-width: 250px;
+  margin: 0 1rem 3rem 0;
+}
+
+.servicesCard h2 {
+  margin: 0.5rem 0;
+}
+
+.servicesCard p {
+  margin: 0.5rem 0;
+}
+
+.servicesCard a {
+  text-decoration: none;
+  color: #58aa87;
+  border-bottom: #58aa87 1px solid;
+}
