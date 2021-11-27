@@ -79,15 +79,15 @@ export default function Home() {
             <h2>El mejor y justo tratamiendo dental</h2>
           </div>
           <ServiceCard
-            src="/experience.png"
-            alt="Dental Implants"
+            src="/implants.png"
+            alt="Dental Implants icon"
             title="Implante Dental"
             description="Producto sanitario diseñado para sustituir la raíz que falta y para mantener el diente artificial en su sitio. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             link="#"
           />
           <ServiceCard
-            src="/experience.png"
-            alt="Dental Implants"
+            src="/smile.png"
+            alt="Diseño de sonrisa icon"
             title="Diseño de sonrisa"
             description="Recubrimiento dental por medio de laminillas o carillas en materiales de ultima
                 generaci&oacute;n con altos est&aacute;ndares de calidad, que retornan el color,
@@ -95,8 +95,8 @@ export default function Home() {
             link="#"
           />
           <ServiceCard
-            src="/experience.png"
-            alt="Dental Implants"
+            src="/braces.png"
+            alt="Ortodoncia icon"
             title="Ortodoncia"
             description="Tratamiento conservador ideal para corregir toda clase de mal posición, manteniendo
                 la forma y tamaño original de tus dientes, recuperando la estética de una sonrisa
@@ -104,8 +104,8 @@ export default function Home() {
             link="#"
           />
           <ServiceCard
-            src="/experience.png"
-            alt="Dental Implants"
+            src="/tooth.png"
+            alt="Endodoncia icon"
             title="Endodoncia"
             description="Tratamiento conservador por el cual se retira el nervio con el fin de conservar o
                 recuperar la integridad y función del diente comprometido por enfermedad, trauma o una
@@ -113,8 +113,8 @@ export default function Home() {
             link="#"
           />
           <ServiceCard
-            src="/experience.png"
-            alt="Dental Implants"
+            src="/surgery.png"
+            alt="Cirugia oral icon"
             title="Cirug&iacute;a Oral"
             description="Procedimientos con el fin de controlar la evolución de una patolog&iacute;a y/o
                 devolver la salud oral. (exodoncias, Frenectomia, Injertos &oacute;seos,
@@ -122,8 +122,8 @@ export default function Home() {
             link="#"
           />
           <ServiceCard
-            src="/experience.png"
-            alt="Dental Implants"
+            src="/general.png"
+            alt="Odontologia general icon"
             title="Odontologia general"
             description="Un excelente cuidado y una rutina de prevencion son 
             pilares fundamentales para una sonrisa y un cuerpo saludable. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
