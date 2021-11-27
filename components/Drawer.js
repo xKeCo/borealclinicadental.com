@@ -3,7 +3,7 @@ import s from "./styles/Drawer.module.css";
 // Material UI Components
 import {
   Box,
-  Drawer,
+  SwipeableDrawer,
   List,
   Divider,
   ListItem,
@@ -25,6 +25,7 @@ export default function TemporaryDrawer() {
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
+      event &&
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
     ) {
@@ -33,7 +34,6 @@ export default function TemporaryDrawer() {
 
     setState({ ...state, [anchor]: open });
   };
-
   const list = (anchor) => (
     <Box
       sx={{ width: 250 }}
@@ -62,13 +62,14 @@ export default function TemporaryDrawer() {
         className={s.burgerIcon}
         fontSize="large"
       />
-      <Drawer
+      <SwipeableDrawer
         anchor={"right"}
         open={state["right"]}
         onClose={toggleDrawer("right", false)}
+        onOpen={toggleDrawer("right", true)}
       >
         {list("right")}
-      </Drawer>
+      </SwipeableDrawer>
     </div>
   );
 }

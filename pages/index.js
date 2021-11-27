@@ -82,7 +82,7 @@ export default function Home() {
             src="/experience.png"
             alt="Dental Implants"
             title="Implante Dental"
-            description="producto sanitario diseñado para sustituir la raíz que falta y para mantener el diente artificial en su sitio."
+            description="Producto sanitario diseñado para sustituir la raíz que falta y para mantener el diente artificial en su sitio. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             link="#"
           />
           <ServiceCard
@@ -126,7 +126,7 @@ export default function Home() {
             alt="Dental Implants"
             title="Odontologia general"
             description="Un excelente cuidado y una rutina de prevencion son 
-            pilares fundamentales para una sonrisa y un cuerpo saludable"
+            pilares fundamentales para una sonrisa y un cuerpo saludable. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             link="#"
           />
         </div>

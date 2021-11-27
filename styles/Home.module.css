@@ -80,8 +80,7 @@
   justify-content: space-around;
   flex: 1;
   flex-wrap: wrap;
-  background: #fafafa;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 2rem;
   max-width: 1027px;
 }
 
@@ -91,7 +90,7 @@
 
 .cardHeader p {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -181,12 +180,5 @@
 @media screen and (max-width: 1079px) {
   .servicesCardImage {
     display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
   }
 }

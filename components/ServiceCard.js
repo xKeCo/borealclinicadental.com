@@ -12,10 +12,8 @@ function ServiceCard({ src, alt, title, description, link }) {
         <h2>{title}</h2>
         <p>{description}</p>
         <Link href={link}>
-          <a>Conoce mas </a>
+          <a>Conoce mas &rarr;</a>
         </Link>
-
-        <span>&rarr;</span>
       </div>
     </div>
   );
