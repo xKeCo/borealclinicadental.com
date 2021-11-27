@@ -69,7 +69,7 @@
 }
 
 .servicesCardImage {
-  background-image: url("/services2.jpg");
+  background-image: url("/services.jpg");
   width: 100%;
   max-width: 400px;
   background-size: cover;

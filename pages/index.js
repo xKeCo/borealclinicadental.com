@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
 import Navbar from "../components/Navbar";
 import SEO from "../components/SEO";
 import s from "../styles/Home.module.css";
@@ -7,6 +9,30 @@ import Card from "../components/Card";
 import ServiceCard from "../components/ServiceCard";
 
 export default function Home() {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        "Implantes dentales",
+        "Diseños de sonrisa",
+        "Cirugías orales",
+        "Odontología sin limites",
+      ], // Strings to display
+      // Speed settings, try diffrent values untill you get good results
+      startDelay: 0,
+      typeSpeed: 80,
+      backSpeed: 40,
+      backDelay: 600,
+      showCursor: false,
+      smartBackspace: true,
+    });
+
+    // Destropying
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
     <div className={s.container}>
       <SEO />
@@ -19,9 +45,9 @@ export default function Home() {
             Boreal <br /> Clin&iacute;ca Dental
           </h1>
           <p className={s.heroTextSecondary}>
-            Odontolog&iacute;a sin l&iacute;mites.
+            <span ref={el}></span>.
           </p>
-          <Button auto className={s.heroButton}>
+          <Button className={s.heroButton}>
             <a href="#" target="_blank">
               Agenda tu cita
             </a>
@@ -59,7 +85,7 @@ export default function Home() {
           alt={"Dentist chair"}
           title={"2+"}
           description={
-            "Instalaciones con los equipos mas modernos a su disposicion"
+            "Instalaciones con los equipos mas modernos a su disposición"
           }
         />
         <Card
@@ -99,8 +125,7 @@ export default function Home() {
             alt="Ortodoncia icon"
             title="Ortodoncia"
             description="Tratamiento conservador ideal para corregir toda clase de mal posición, manteniendo
-                la forma y tamaño original de tus dientes, recuperando la estética de una sonrisa
-                ideal."
+                la forma y tamaño original de tus dientes, recuperando la estética de una sonrisa ideal."
             link="#"
           />
           <ServiceCard
@@ -109,7 +134,7 @@ export default function Home() {
             title="Endodoncia"
             description="Tratamiento conservador por el cual se retira el nervio con el fin de conservar o
                 recuperar la integridad y función del diente comprometido por enfermedad, trauma o una
-                disposición protésica."
+                disposición prot&eacute;sica."
             link="#"
           />
           <ServiceCard
@@ -123,9 +148,9 @@ export default function Home() {
           />
           <ServiceCard
             src="/general.png"
-            alt="Odontologia general icon"
-            title="Odontologia general"
-            description="Un excelente cuidado y una rutina de prevencion son 
+            alt="Odontolog&iacute;a general icon"
+            title="Odontolog&iacute;a general"
+            description="Un excelente cuidado y una rutina de prevenci&oacute;n son 
             pilares fundamentales para una sonrisa y un cuerpo saludable. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             link="#"
           />
