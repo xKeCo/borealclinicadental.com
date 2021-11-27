@@ -49,7 +49,7 @@ export default function Home() {
       {/* Card Container */}
       <div className={s.cardContainer}>
         <Card
-          src={"/people.png"}
+          src={"/people1.png"}
           alt={"People icon"}
           title={"2260+"}
           description={"Pacientes luciendo una hermosa sonrisa."}
