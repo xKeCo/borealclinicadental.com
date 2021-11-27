@@ -9,6 +9,7 @@ function Navbar() {
         <div className={s.navbarLeft}>
           <a
             href="https://www.instagram.com/clinicadentalboreal/"
+            rel="noreferrer"
             target="_blank"
             className={s.navbarLink}
           >
