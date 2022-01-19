@@ -1,7 +1,7 @@
 .heroContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 78vh;
   flex: 1;
   gap: 2rem;
@@ -59,13 +59,14 @@
   /* flex-wrap: wrap; */
   background: #fafafa;
   padding: 2rem;
+  margin: 5rem 0;
 }
 
 .servicesContainer {
   display: flex;
   justify-content: center;
   flex: 1;
-  padding: 3rem;
+  padding: 5rem 3rem;
 }
 
 .servicesCardImage {
@@ -89,26 +90,84 @@
 }
 
 .cardHeader p {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   margin: 0;
+  color: #58aa87;
 }
 
 .cardHeader h2 {
   font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: 800;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
   letter-spacing: 0.5px;
 }
 
+/* Our team */
+.teamHeaderContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.teamHeaderContainer p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #58aa87;
+}
+
+.teamHeaderContainer h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+.teamContainer {
+  padding: 3rem;
+}
+
+.personContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+  gap: 5rem;
+}
+
+.personDetails {
+  max-width: 600px;
+}
+
+.personImageContainer {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.personImage {
+  width: 100%;
+  height: auto;
+}
+
 .footer {
+  border-top: 1px solid #eaeaea;
+  padding: 4rem 16rem;
+  background-color: #fafafa;
+}
+
+.footerContactDetailsContainer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .footer a {
@@ -116,6 +175,24 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.socialMediaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.lowerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terminos {
+  display: flex;
+  gap: 2rem;
 }
 
 /* Animations */

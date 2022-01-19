@@ -7,6 +7,11 @@ import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import Card from "../components/Card";
 import ServiceCard from "../components/ServiceCard";
+import {
+  Instagram as InstagramIcon,
+  Facebook as FacebookIcon,
+  WhatsApp as WhatsAppIcon,
+} from "@mui/icons-material/";
 
 export default function Home() {
   const el = useRef(null);
@@ -57,7 +62,7 @@ export default function Home() {
           <Image
             className={s.heroImage}
             src="/Logo.svg"
-            alt="hero"
+            alt="Logo Boreal"
             width={450}
             height={450}
             priority
@@ -68,7 +73,7 @@ export default function Home() {
       {/* Icon Container */}
       <div className={s.iconContainer}>
         <div className={s.icon}>
-          <Image src="/Down.svg" alt="html" width={45} height={45} />
+          <Image src="/Down.svg" alt="Down Icon" width={45} height={45} />
         </div>
       </div>
 
@@ -157,17 +162,88 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Team container */}
+      <div className={s.teamHeaderContainer}>
+        <p>Nuestro equipo</p>
+        <h2>
+          Comprometidos con el cuidado <br /> de tu salud dental
+        </h2>
+      </div>
+      <div className={s.teamContainer}>
+        <div className={s.personContainer}>
+          <div className={s.personDetails}>
+            <h1>Dra. Sandra Pe&ntilde;a</h1>
+            <p>
+              Especialista en Implantología Oral y Reconstructiva egresada de la
+              Fundación universitaria CIEO - UNICIEO, con más de 13 años de
+              experiencia en diferentes ramas de la odontología en Colombia y
+              España, ofrece un diagnostico multidisciplinario que garantiza la
+              mejor elección en su plan de tratamiento, predecibilidad y
+              ejecución del mismo, recuperando su salud, estética y confort.
+            </p>
+          </div>
+          <div className={s.personImageContainer}>
+            <Image
+              className={s.personImage}
+              src="/DraSandra.jpeg"
+              alt="Imagen Dra. Sandra Pe&ntilde;a"
+              width={500}
+              height={750}
+              priority
+            />
+          </div>
+        </div>
+      </div>
+
       <footer className={s.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={s.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <div className={s.footerContactDetailsContainer}>
+          <div>
+            <h3>Disponibilidad</h3>
+            <p>
+              Lun: 9:00 am - 6:00 pm <br />
+              Mar: 9:00 am - 6:00 pm <br />
+              Mie: 9:00 am - 6:00 pm <br />
+              Jue: 9:00 am - 6:00 pm <br />
+              Vie: 9:00 am - 6:00 pm <br />
+              Sab: Citas programadas
+            </p>
+          </div>
+          <div>
+            <h3>Contacto</h3>
+            <p>
+              Carrera 2da # 58-04, Los Andes,
+              <br /> Cali, Colombia.
+            </p>
+            <p>
+              Cel. +57 (322) 200-9244 <br />
+            </p>
+            <div className={s.socialMediaContainer}>
+              <div>
+                <InstagramIcon color="secondary" sx={{ fontSize: 27 }} />
+              </div>
+              <div>
+                <FacebookIcon color="primary" sx={{ fontSize: 27 }} />
+              </div>
+              <div>
+                <WhatsAppIcon color="success" sx={{ fontSize: 27 }} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div className={s.lowerFooter}>
+          <p>Boreal Clinica Dental 2021 - Todos los derechos reservados.</p>
+          <div className={s.terminos}>
+            <a href="#">
+              <p>Terminos y condiciones</p>
+            </a>
+            <a href="#">
+              <p>Politicas de privacidad</p>
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   );
