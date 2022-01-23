@@ -108,6 +108,7 @@
 .teamHeaderContainer {
   width: 100%;
   text-align: center;
+  padding: 0 2rem;
 }
 
 .teamHeaderContainer p {
@@ -156,7 +157,7 @@
 
 .footer {
   border-top: 1px solid #eaeaea;
-  padding: 4rem 16rem;
+  padding: 4rem;
   background-color: #fafafa;
 }
 
@@ -239,6 +240,11 @@
   .heroContainer {
     height: 43vh;
     margin-top: 10rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainTitle {
+    font-size: 2rem !important;
   }
 }
 @media screen and (max-width: 868px) {

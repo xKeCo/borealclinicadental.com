@@ -107,7 +107,7 @@ export default function Home() {
         <div className={s.servicesCardContainer}>
           <div className={s.cardHeader}>
             <p>Nuestros servicios</p>
-            <h2>El mejor y justo tratamiendo dental</h2>
+            <h2 className={s.mainTitle}>El mejor y justo tratamiendo dental</h2>
           </div>
           <ServiceCard
             src="/implants.png"
@@ -165,7 +165,7 @@ export default function Home() {
       {/* Team container */}
       <div className={s.teamHeaderContainer}>
         <p>Nuestro equipo</p>
-        <h2>
+        <h2 className={s.mainTitle}>
           Comprometidos con el cuidado <br /> de tu salud dental
         </h2>
       </div>
