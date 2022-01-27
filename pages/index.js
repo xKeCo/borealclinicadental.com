@@ -54,7 +54,11 @@ export default function Home() {
             <span ref={el}></span>.
           </p>
           <Button className={s.heroButton}>
-            <a href="https://wa.link/y8wop2" target="_blank">
+            <a
+              href="https://wa.link/y8wop2"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Agenda tu cita
             </a>
           </Button>
