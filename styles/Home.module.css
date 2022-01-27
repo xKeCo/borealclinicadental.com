@@ -145,8 +145,8 @@
 
 .personImageContainer {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -155,6 +155,27 @@
   height: auto;
 }
 
+/* Booking */
+
+.bookingSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2db97c;
+  padding: 2rem;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.bookingButton {
+  margin: 12px 0;
+  background-color: #fff !important;
+  color: black !important;
+}
+
+.bookingText {
+  min-width: 330px;
+}
+/* Footer */
 .footer {
   border-top: 1px solid #eaeaea;
   padding: 4rem;
@@ -212,11 +233,31 @@
 
 /* Media Queries */
 
+@media screen and (max-width: 1079px) {
+  .servicesCardImage {
+    display: none;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .heroTextMain {
+    font-size: 45px;
+  }
+}
+
 @media screen and (max-width: 920px) {
   .heroImageContainer {
     max-width: 350px;
   }
 }
+@media screen and (max-width: 868px) {
+  .heroText {
+    min-width: 310px;
+  }
+  .heroImageContainer {
+    max-width: 300px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .heroContainer {
     justify-content: center;
@@ -241,27 +282,52 @@
     height: 43vh;
     margin-top: 10rem;
   }
+
+  .bookingMainText {
+    font-size: 1.5em;
+  }
+  .bookingText {
+    min-width: 250px !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .mainTitle {
     font-size: 2rem !important;
   }
-}
-@media screen and (max-width: 868px) {
-  .heroText {
-    min-width: 310px;
+  .bookingMainText {
+    font-size: 1.2rem;
   }
-  .heroImageContainer {
-    max-width: 300px;
+  .bookingText {
+    min-width: 202px !important;
+  }
+  .footer {
+    padding: 5rem 2rem;
+    gap: 2rem;
   }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 460px) {
+  .personImageContainer {
+    width: 250px;
+    height: 250px;
+  }
+  .bookingText {
+    min-width: 170px !important;
+  }
+  .bookingMainText {
+    font-size: 1rem;
+  }
+
+  .personContainer {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
   .heroTextMain {
-    font-size: 45px;
+    font-size: 3.2rem;
   }
-}
-@media screen and (max-width: 1079px) {
-  .servicesCardImage {
-    display: none;
+  .lowerFooter {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 }

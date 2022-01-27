@@ -58,7 +58,7 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div>
+    <>
       <MenuIcon
         onClick={toggleDrawer("right", true)}
         className={s.burgerIcon}
@@ -72,6 +72,6 @@ export default function TemporaryDrawer() {
       >
         {list("right")}
       </SwipeableDrawer>
-    </div>
+    </>
   );
 }

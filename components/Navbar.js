@@ -1,6 +1,7 @@
 import Drawer from "./Drawer";
 import s from "./styles/Navbar.module.css";
 import Image from "next/image";
+import { Button } from "@nextui-org/react";
 
 function Navbar() {
   return (
@@ -27,7 +28,16 @@ function Navbar() {
           </a>
         </div>
         <div className={s.navbarRight}>
-          <Drawer /> 
+          {/* <Drawer /> */}
+          <Button className={s.heroButton}>
+            <a
+              href="https://wa.link/y8wop2"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Agenda tu cita
+            </a>
+          </Button>
         </div>
       </div>
     </>

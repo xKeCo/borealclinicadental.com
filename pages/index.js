@@ -12,6 +12,7 @@ import {
   Facebook as FacebookIcon,
   WhatsApp as WhatsAppIcon,
 } from "@mui/icons-material/";
+import { IconButton } from "@mui/material";
 
 export default function Home() {
   const el = useRef(null);
@@ -53,7 +54,7 @@ export default function Home() {
             <span ref={el}></span>.
           </p>
           <Button className={s.heroButton}>
-            <a href="#" target="_blank">
+            <a href="https://wa.link/y8wop2" target="_blank">
               Agenda tu cita
             </a>
           </Button>
@@ -195,6 +196,33 @@ export default function Home() {
         </div>
       </div>
 
+      <div className={s.bookingSection}>
+        <div className={s.bookingText}>
+          <h1 className={s.bookingMainText}>
+            Estamos abiertos a<br /> todo tipo de consultas
+          </h1>
+          <Button className={s.bookingButton} size="small">
+            <a
+              href="https://wa.link/y8wop2"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Agenda tu cita
+            </a>
+          </Button>
+        </div>
+        <div className={s.bookingImageContainer}>
+          <Image
+            className={s.bookingImage}
+            src="/calendar.svg"
+            alt="Logo Boreal"
+            width={300}
+            height={300}
+            priority
+          />
+        </div>
+      </div>
+
       <footer className={s.footer}>
         <div className={s.footerContactDetailsContainer}>
           <div>
@@ -219,13 +247,49 @@ export default function Home() {
             </p>
             <div className={s.socialMediaContainer}>
               <div>
-                <InstagramIcon color="secondary" sx={{ fontSize: 27 }} />
+                <a
+                  href="https://www.instagram.com/clinicadentalboreal/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <IconButton
+                    color="secondary"
+                    aria-label="upload picture"
+                    component="span"
+                  >
+                    <InstagramIcon sx={{ fontSize: 30 }} />
+                  </IconButton>
+                </a>
               </div>
               <div>
-                <FacebookIcon color="primary" sx={{ fontSize: 27 }} />
+                <a
+                  href="https://www.facebook.com/BorealClinicaDental/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <IconButton
+                    color="primary"
+                    aria-label="upload picture"
+                    component="span"
+                  >
+                    <FacebookIcon sx={{ fontSize: 30 }} />
+                  </IconButton>
+                </a>
               </div>
               <div>
-                <WhatsAppIcon color="success" sx={{ fontSize: 27 }} />
+                <a
+                  href="https://wa.link/y8wop2"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <IconButton
+                    color="success"
+                    aria-label="upload picture"
+                    component="span"
+                  >
+                    <WhatsAppIcon sx={{ fontSize: 30 }} />
+                  </IconButton>
+                </a>
               </div>
             </div>
           </div>
@@ -236,12 +300,12 @@ export default function Home() {
         <div className={s.lowerFooter}>
           <p>Boreal Clinica Dental 2021 - Todos los derechos reservados.</p>
           <div className={s.terminos}>
-            <a href="#">
-              <p>Terminos y condiciones</p>
-            </a>
-            <a href="#">
-              <p>Politicas de privacidad</p>
-            </a>
+            {/* <a href="#" rel="noopener noreferrer"> */}
+            <p>Terminos y condiciones</p>
+            {/* </a> */}
+            {/* <a href="#" rel="noopener noreferrer"> */}
+            <p>Politicas de privacidad</p>
+            {/* </a> */}
           </div>
         </div>
       </footer>
