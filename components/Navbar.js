@@ -1,20 +1,27 @@
-import Drawer from "./Drawer";
 import s from "./styles/Navbar.module.css";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
+import Link from "next/dist/client/link";
 
 function Navbar() {
   return (
     <>
       <div className={s.navbar}>
         <div className={s.navbarLeft}>
-          <a
-            href="https://www.instagram.com/clinicadentalboreal/"
+          <Link
+            href="/"
             rel="noopener noreferrer"
             target="_blank"
             className={s.navbarLink}
           >
-            <span className={s.navbarLinkText}>Boreal</span>
+            <p className={s.navbarLinkText}>Boreal</p>
+          </Link>
+          <Link
+            href="/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className={s.navbarLink}
+          >
             <div className={s.navbarLogoContainer}>
               <Image
                 className={s.navbarLogo}
@@ -25,7 +32,7 @@ function Navbar() {
                 priority
               />
             </div>
-          </a>
+          </Link>
         </div>
         <div className={s.navbarRight}>
           {/* <Drawer /> */}

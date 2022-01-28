@@ -126,35 +126,6 @@
   letter-spacing: 0.5px;
 }
 
-.teamContainer {
-  padding: 3rem;
-}
-
-.personContainer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  flex: 1;
-  gap: 5rem;
-}
-
-.personDetails {
-  max-width: 600px;
-}
-
-.personImageContainer {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-.personImage {
-  width: 100%;
-  height: auto;
-}
-
 /* Booking */
 
 .bookingSection {
@@ -307,7 +278,7 @@
 }
 @media screen and (max-width: 460px) {
   .personImageContainer {
-    width: 250px;
+    width: 200px;
     height: 250px;
   }
   .bookingText {
