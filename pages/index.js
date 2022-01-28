@@ -202,7 +202,9 @@ export default function Home() {
       <div className={s.bookingSection}>
         <div className={s.bookingText}>
           <h1 className={s.bookingMainText}>
-            Estamos abiertos a<br /> todo tipo de consultas
+            Estamos para ayudarte,
+            <br />
+            no dudes en contactarnos.
           </h1>
           <a
             href="https://wa.link/y8wop2"
@@ -210,7 +212,7 @@ export default function Home() {
             target="_blank"
           >
             <Button className={s.bookingButton} size="small">
-              Agenda tu cita
+              Cont&aacute;ctanos
             </Button>
           </a>
         </div>
