@@ -13,15 +13,15 @@ export default function DinamicPage({ title, subtitle, description }) {
         <div className={s.headContainer}>
           <h1 className={s.headMainText}>{title}</h1>
           <p className={s.headSecText}>{subtitle}</p>
-          <Button className={s.heroButton}>
-            <a
-              href="https://wa.link/y8wop2"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+          <a
+            href="https://wa.link/y8wop2"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button className={s.heroButton}>
               M&aacute;s informaci&oacute;n proximamente!
-            </a>
-          </Button>
+            </Button>
+          </a>
           <Button className={s.backButton}>
             <Link href="/" rel="noopener noreferrer">
               Ir al Inicio

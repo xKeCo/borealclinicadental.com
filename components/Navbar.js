@@ -36,15 +36,13 @@ function Navbar() {
         </div>
         <div className={s.navbarRight}>
           {/* <Drawer /> */}
-          <Button className={s.heroButton}>
-            <a
-              href="https://wa.link/y8wop2"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Agenda tu cita
-            </a>
-          </Button>
+          <a
+            href="https://wa.link/y8wop2"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button className={s.heroButton}>Agenda tu cita</Button>
+          </a>
         </div>
       </div>
     </>

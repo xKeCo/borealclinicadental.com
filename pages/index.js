@@ -59,15 +59,13 @@ export default function Home() {
           <p className={s.heroTextSecondary}>
             <span ref={el}></span>.
           </p>
-          <Button className={s.heroButton}>
-            <a
-              href="https://wa.link/y8wop2"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Agenda tu cita
-            </a>
-          </Button>
+          <a
+            href="https://wa.link/y8wop2"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button className={s.heroButton}>Agenda tu cita</Button>
+          </a>
         </div>
         <div className={s.heroImageContainer}>
           <Image
@@ -193,7 +191,11 @@ export default function Home() {
       />
       <TeamPerson
         name="Dra. Valeria Salazar"
-        desc="Odont&oacute;loga egresada del colegio odontol&oacute;gico colombiano con un diplomada en est&eacute;tica dental en la Universidad del Valle - UNIVALLE, con alta destreza en la prevenci&oacute;n, el control y la restauraci&oacute;n de lesiones dentales con ayuda de materiales restauradores directos de ultima generaci&oacute;n, devolviendo as&iacute;; la est&eacute;tica y funcionalidad del sistema oral de manera inmediata. Logrando una armon&iacute;a dental en cuanto a la forma, el color, la est&eacute;tica y la funcionalidad."
+        desc="Odont&oacute;loga egresada del colegio odontol&oacute;gico colombiano con un diplomada en est&eacute;tica dental
+        en la Universidad del Valle - UNIVALLE, con alta destreza en la prevenci&oacute;n, el control y la restauraci&oacute;n 
+        de lesiones dentales con ayuda de materiales restauradores directos de ultima generaci&oacute;n, devolviendo as&iacute;; 
+        la est&eacute;tica y funcionalidad del sistema oral de manera inmediata. Logrando una armon&iacute;a dental en cuanto a 
+        la forma, el color, la est&eacute;tica y la funcionalidad."
         src="/DraValeria.jpeg"
       />
 
@@ -202,15 +204,15 @@ export default function Home() {
           <h1 className={s.bookingMainText}>
             Estamos abiertos a<br /> todo tipo de consultas
           </h1>
-          <Button className={s.bookingButton} size="small">
-            <a
-              href="https://wa.link/y8wop2"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+          <a
+            href="https://wa.link/y8wop2"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button className={s.bookingButton} size="small">
               Agenda tu cita
-            </a>
-          </Button>
+            </Button>
+          </a>
         </div>
         <div className={s.bookingImageContainer}>
           <Image
