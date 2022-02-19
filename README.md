@@ -1,6 +1,6 @@
 # Official website of Boreal Dental Clinic located in Cali, Colombia. 🇨🇴
 
-🌎 URL: [www.borealclinicadental.com](https://www.borealclinicadental.com/)
+Website: [www.borealclinicadental.com](https://www.borealclinicadental.com/)
 
 ![Boreal Clinica Dental Image](./public/Readme-image.png)
 
