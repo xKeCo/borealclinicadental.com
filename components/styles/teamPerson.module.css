@@ -39,10 +39,10 @@
 
 .personImageContainer {
   position: relative;
-  width: 210px;
+  width: 200px;
   height: 230px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 2px;
 }
 .personImage {
   width: 100%;

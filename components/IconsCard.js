@@ -1,7 +1,7 @@
 import s from "./styles/Card.module.css";
 import Image from "next/image";
 
-function Card({ src, alt, title, description }) {
+function IconsCard({ src, alt, title, description }) {
   return (
     <>
       <div className={s.card}>
@@ -22,4 +22,4 @@ function Card({ src, alt, title, description }) {
   );
 }
 
-export default Card;
+export default IconsCard;

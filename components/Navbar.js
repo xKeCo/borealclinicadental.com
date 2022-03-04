@@ -41,7 +41,9 @@ function Navbar() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Button className={s.heroButton}>Agenda tu cita</Button>
+            <Button className={s.heroButton} size="small">
+              Agenda tu cita
+            </Button>
           </a>
         </div>
       </div>

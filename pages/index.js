@@ -7,7 +7,7 @@ import Typed from "typed.js";
 
 // Local Components
 import Navbar from "../components/Navbar";
-import Card from "../components/Card";
+import IconsCard from "../components/IconsCard";
 import ServiceCard from "../components/ServiceCard";
 import TeamPerson from "../components/TeamPerson";
 
@@ -15,8 +15,8 @@ import TeamPerson from "../components/TeamPerson";
 import s from "../styles/Home.module.css";
 
 // Next Ui Components
-import { Button } from "@nextui-org/react";
 import { IconButton } from "@mui/material";
+import { Button } from "@nextui-org/react";
 
 // Icons
 import {
@@ -103,13 +103,13 @@ export default function Home() {
 
       {/* Card Container */}
       <div className={s.cardContainer}>
-        <Card
+        <IconsCard
           src={"/people1.png"}
           alt={"People icon"}
           title={"2260+"}
           description={"Pacientes luciendo una hermosa sonrisa."}
         />
-        <Card
+        <IconsCard
           src={"/dentist-chair.png"}
           alt={"Dentist chair"}
           title={"2+"}
@@ -117,7 +117,7 @@ export default function Home() {
             "Instalaciones con los equipos mas modernos a su disposición"
           }
         />
-        <Card
+        <IconsCard
           src={"/experience.png"}
           alt={"Experience icon"}
           title={"12+"}
@@ -226,7 +226,7 @@ export default function Home() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Button className={s.bookingButton} size="small">
+            <Button size="small" className={s.bookingButton}>
               Cont&aacute;ctanos
             </Button>
           </a>

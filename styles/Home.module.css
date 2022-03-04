@@ -36,6 +36,12 @@
 .heroButton {
   margin: 12px 0;
   background-color: #2db97c !important;
+  border: 2px solid #2db97c !important;
+}
+
+.heroButton:hover {
+  background-color: #fff !important;
+  color: #000 !important;
 }
 
 .heroButton a {
@@ -141,6 +147,15 @@
   margin: 12px 0;
   background-color: #fff !important;
   color: black !important;
+  border: 2px solid #fff !important;
+  padding: 0 1rem !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+.bookingButton:hover {
+  background-color: #2db97c !important;
+  color: #fff !important;
 }
 
 .bookingText {
@@ -161,6 +176,7 @@
   flex-wrap: wrap;
   text-align: center;
   margin-bottom: 3rem;
+  line-height: 1.7rem;
 }
 
 .footer a {
@@ -271,27 +287,26 @@
   .mainTitle {
     font-size: 2rem !important;
   }
-  .bookingMainText {
-    font-size: 1.2rem;
-  }
-  .bookingText {
-    min-width: 202px !important;
-  }
   .footer {
     padding: 5rem 2rem;
     gap: 2rem;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .cardContainer {
+    margin: 0;
+    margin-top: 5rem;
+  }
+}
+
 @media screen and (max-width: 460px) {
   .personImageContainer {
     width: 200px;
     height: 250px;
   }
-  .bookingText {
-    min-width: 170px !important;
-  }
-  .bookingMainText {
-    font-size: 1rem;
+  .bookingImageContainer {
+    display: none;
   }
 
   .personContainer {
@@ -306,5 +321,13 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .heroText {
+    min-width: initial;
+  }
+  .heroTextMain {
+    font-size: 2.5rem;
   }
 }
