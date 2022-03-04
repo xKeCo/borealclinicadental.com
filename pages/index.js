@@ -26,7 +26,7 @@ import {
 } from "@mui/icons-material/";
 
 // Images
-import Logo from "../public/Logo.svg";
+import Logo from "../public/Logo.png";
 
 export default function Home() {
   const el = useRef(null);
@@ -61,7 +61,7 @@ export default function Home() {
           name="description"
           content="Sitio web oficial de Boreal Clinica Dental"
         />
-        <link rel="icon" href="/Logo.svg" />
+        <link rel="icon" href="/Logo.png" />
       </Head>
       <Navbar />
 

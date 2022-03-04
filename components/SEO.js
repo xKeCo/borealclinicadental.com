@@ -9,7 +9,7 @@ function SEO() {
           name="description"
           content="Sitio web oficial de Boreal Clinica Dental"
         />
-        <link rel="icon" href="/Logo.svg" />
+        <link rel="icon" href="/Logo.png" />
       </Head>
     </div>
   );

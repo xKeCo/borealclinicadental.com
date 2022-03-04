@@ -2,6 +2,7 @@ import s from "./styles/Navbar.module.css";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import Link from "next/dist/client/link";
+import Logo from "../public/Logo.png";
 
 function Navbar() {
   return (
@@ -25,7 +26,7 @@ function Navbar() {
             <div className={s.navbarLogoContainer}>
               <Image
                 className={s.navbarLogo}
-                src="/Logo.svg"
+                src={Logo}
                 alt="hero"
                 width={50}
                 height={50}
