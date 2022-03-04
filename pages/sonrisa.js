@@ -13,7 +13,6 @@ export default function implenates() {
       <DinamicPage
         title="Dise&ntilde;o de sonrisa"
         subtitle="Hacemos una mejor sonrisa para ti"
-        // description="Hola"
       />
     </>
   );

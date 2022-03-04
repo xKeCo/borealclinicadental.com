@@ -13,7 +13,6 @@ export default function implenates() {
       <DinamicPage
         title="Ortodoncia"
         subtitle="El ortodoncia es una técnica que permite restaurar la forma de los dientes."
-        // description="Hola"
       />
     </>
   );

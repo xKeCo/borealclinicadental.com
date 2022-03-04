@@ -13,7 +13,6 @@ export default function implenates() {
       <DinamicPage
         title="Endodoncia"
         subtitle="La endodoncia es una técnica que permite restaurar la forma de los dientes."
-        // description="Hola"
       />
     </>
   );

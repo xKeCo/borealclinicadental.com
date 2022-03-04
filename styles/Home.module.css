@@ -1,7 +1,7 @@
 .heroContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 78vh;
   flex: 1;
   gap: 2rem;
@@ -203,6 +203,12 @@
 }
 
 /* Media Queries */
+
+@media screen and (min-width: 1441px) {
+  .heroContainer {
+    justify-content: center;
+  }
+}
 
 @media screen and (max-width: 1079px) {
   .servicesCardImage {

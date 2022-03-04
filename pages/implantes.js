@@ -13,7 +13,6 @@ export default function implenates() {
       <DinamicPage
         title="Implantes Dentales y Rehabilitacion Oral"
         subtitle="Recupera y luce esa estupenda sonrisa que algún dia tuviste."
-        // description="Hola"
       />
     </>
   );
