@@ -1,0 +1,64 @@
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: var(--transition);
+}
+
+.personContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+  gap: 5rem;
+  transition: var(--transition);
+}
+
+.personDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.personDetails__title {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  margin: 0;
+  transition: var(--transition);
+}
+
+.personDetails__role {
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  font-weight: 400;
+  color: #777;
+  margin: 0;
+  transition: var(--transition);
+}
+
+.person__image__container {
+  position: relative;
+  /* width: 200px; */
+  /* height: 230px; */
+  overflow: hidden;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.person__image {
+  width: 100%;
+  height: auto;
+  transition: var(--transition);
+}

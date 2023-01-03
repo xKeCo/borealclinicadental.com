@@ -2,10 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 78vh;
-  flex: 1;
+  height: calc(100vh - 178px);
   gap: 2rem;
-  padding: 0 8rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  animation: var(--animation);
+  transition: var(--transition);
 }
 
 .iconContainer {
@@ -15,28 +17,41 @@
   height: 100%;
   animation: up-down 1s ease infinite;
   margin-bottom: 3rem;
+  transition: var(--transition);
 }
 
 /* Un elemento seguido de otro - abajo */
 .heroText {
   min-width: 400px;
+  transition: var(--transition);
 }
 
 .heroTextMain {
   font-size: 3.75rem;
   font-weight: 600;
   margin: 0;
+  transition: var(--transition);
 }
 .heroTextSecondary {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   margin: 20px 0;
+  transition: var(--transition);
 }
 
 .heroButton {
-  margin: 12px 0;
-  background-color: #2db97c !important;
-  border: 2px solid #2db97c !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  max-width: 150px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #2db97c;
+  border: 1px solid #2db97c;
+  transition: var(--transition);
 }
 
 .heroButton:hover {
@@ -51,10 +66,25 @@
   text-decoration: none;
   text-transform: initial;
   letter-spacing: 0.3px;
+  transition: var(--transition);
 }
 
 .heroImageContainer {
-  max-width: 450px;
+  position: static;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  animation: var(--animation);
+  transition: var(--transition);
+}
+
+.heroImage {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+  /* max-width: 1800px; */
+  transition: var(--transition);
 }
 
 .cardContainer {
@@ -66,71 +96,10 @@
   background: #fafafa;
   padding: 2rem;
   margin: 5rem 0;
-}
-
-.servicesContainer {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  padding: 5rem 3rem;
-}
-
-.servicesCardImage {
-  background-image: url("/services.jpg");
-  width: 100%;
-  max-width: 400px;
-  background-size: cover;
-  /* background-position: left; */
-}
-.servicesCardContainer {
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-  flex-wrap: wrap;
-  padding: 1.5rem 2rem;
-  max-width: 1027px;
-}
-
-.cardHeader {
-  width: 100%;
-}
-
-.cardHeader p {
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0;
-  color: #58aa87;
-}
-
-.cardHeader h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  letter-spacing: 0.5px;
+  transition: var(--transition);
 }
 
 /* Our team */
-.teamHeaderContainer {
-  width: 100%;
-  text-align: center;
-  padding: 0 2rem;
-}
-
-.teamHeaderContainer p {
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0;
-  color: #58aa87;
-}
-
-.teamHeaderContainer h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  letter-spacing: 0.5px;
-}
 
 /* Booking */
 
@@ -141,7 +110,7 @@
   background: #2db97c;
   padding: 2rem;
   gap: 1rem;
-  margin-top: 3rem;
+  padding: 5rem 0;
 }
 .bookingButton {
   margin: 12px 0;
@@ -161,48 +130,6 @@
 .bookingText {
   min-width: 330px;
 }
-/* Footer */
-.footer {
-  border-top: 1px solid #eaeaea;
-  padding: 4rem;
-  background-color: #fafafa;
-}
-
-.footerContactDetailsContainer {
-  display: flex;
-  flex: 1;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
-  margin-bottom: 3rem;
-  line-height: 1.7rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.socialMediaContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.lowerFooter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.terminos {
-  display: flex;
-  gap: 2rem;
-}
 
 /* Animations */
 
@@ -221,16 +148,11 @@
 /* Media Queries */
 
 @media screen and (min-width: 1441px) {
-  .heroContainer {
+  /* .heroContainer {
     justify-content: center;
-  }
+  } */
 }
 
-@media screen and (max-width: 1079px) {
-  .servicesCardImage {
-    display: none;
-  }
-}
 @media screen and (max-width: 1025px) {
   .heroTextMain {
     font-size: 45px;
@@ -239,15 +161,17 @@
 
 @media screen and (max-width: 920px) {
   .heroImageContainer {
-    max-width: 350px;
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 868px) {
   .heroText {
     min-width: 310px;
   }
-  .heroImageContainer {
-    max-width: 300px;
+
+  .heroContainer {
+    justify-content: space-between;
+    padding: 0 2rem;
   }
 }
 
@@ -272,8 +196,7 @@
   }
 
   .heroContainer {
-    height: 43vh;
-    margin-top: 10rem;
+    height: calc(100vh - 97px);
   }
 
   .bookingMainText {
@@ -283,13 +206,10 @@
     min-width: 250px !important;
   }
 }
+
 @media screen and (max-width: 600px) {
   .mainTitle {
     font-size: 2rem !important;
-  }
-  .footer {
-    padding: 5rem 2rem;
-    gap: 2rem;
   }
 }
 
@@ -316,11 +236,6 @@
 
   .heroTextMain {
     font-size: 3.2rem;
-  }
-  .lowerFooter {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
   }
 }
 @media screen and (max-width: 360px) {

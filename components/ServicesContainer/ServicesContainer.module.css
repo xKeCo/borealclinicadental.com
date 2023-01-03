@@ -1,0 +1,60 @@
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 5rem 3rem;
+  transition: var(--transition);
+}
+
+.servicesCardImage {
+  background-image: url("/services.jpg");
+  width: 100%;
+  max-width: 400px;
+  background-size: cover;
+  /* background-position: left; */
+  transition: var(--transition);
+}
+
+.servicesCardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  max-width: 1027px;
+  height: 100%;
+  transition: var(--transition);
+}
+
+.cardHeader {
+  width: 100%;
+}
+
+.cardHeader p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #58aa87;
+  transition: var(--transition);
+}
+
+.cardHeader h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 1079px) {
+  .servicesCardImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainTitle {
+    font-size: 2rem !important;
+  }
+}

@@ -1,0 +1,77 @@
+.navbar {
+  padding: 0 2rem;
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  animation: var(--animation);
+  transition: var(--transition);
+}
+
+.navbarLinkText {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.navbarLogoContainer {
+  display: none;
+  animation: var(--animation);
+  transition: var(--transition);
+}
+
+.heroButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  max-width: 150px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #2db97c;
+  border: 1px solid #2db97c;
+  transition: var(--transition);
+}
+
+.heroButton:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.heroButton a {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: initial;
+  letter-spacing: 0.3px;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+  }
+  .navbarLogoContainer {
+    display: block;
+  }
+
+  .navbarLinkText {
+    display: none;
+  }
+}
