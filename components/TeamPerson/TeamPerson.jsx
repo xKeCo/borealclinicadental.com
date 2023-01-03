@@ -4,7 +4,7 @@ import Image from "next/image";
 // Styles
 import s from "./TeamPerson.module.css";
 
-export function TeamPerson({ name, src, desc, role }) {
+export function TeamPerson({ name, src, alt, desc, role }) {
   return (
     <>
       <div className={s.person}>
@@ -12,7 +12,7 @@ export function TeamPerson({ name, src, desc, role }) {
           <Image
             className={s.person__image}
             src={src}
-            alt="Imagen Dra. Sandra Pe&ntilde;a"
+            alt={alt}
             width={1280}
             height={1920}
             priority

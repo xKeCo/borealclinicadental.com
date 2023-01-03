@@ -1,14 +1,14 @@
 export const logros = [
   {
     id: 1,
-    src: "/people1.png",
+    src: "/icons/people1.png",
     alt: "People icon",
     title: "2260+",
     description: "Pacientes luciendo una hermosa sonrisa.",
   },
   {
     id: 2,
-    src: "/dentist-chair.png",
+    src: "/icons/dentist-chair.png",
     alt: "Dentist chair",
     title: "2+",
     description: "Instalaciones con los equipos mas modernos a su disposición",
@@ -16,7 +16,7 @@ export const logros = [
 
   {
     id: 3,
-    src: "/experience.png",
+    src: "/icons/experience.png",
     alt: "Experience icon",
     title: "12+",
     description: "Años de experiencia.",

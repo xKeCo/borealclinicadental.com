@@ -22,6 +22,7 @@ export const TeamContainer = () => {
             // desc={person.desc}
             role={person.role}
             src={person.src}
+            alt={person.alt}
           />
         ))}
       </div>

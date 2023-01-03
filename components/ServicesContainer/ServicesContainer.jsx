@@ -13,8 +13,10 @@ export const ServicesContainer = () => {
       <div className={s.servicesCardImage} />
       <div className={s.servicesCardContainer}>
         <div className={s.cardHeader}>
-          <p>Nuestros servicios</p>
-          <h2 className={s.mainTitle}>El mejor y justo tratamiendo dental</h2>
+          <p className={s.cardHeader__subTitle}>Nuestros servicios</p>
+          <h2 className={s.cardHeader__title}>
+            El mejor y justo tratamiendo dental
+          </h2>
         </div>
 
         {services.map((service) => (

@@ -39,8 +39,8 @@
 }
 
 .heroButton:hover {
-  background-color: #fff !important;
-  color: #000 !important;
+  background-color: #fff;
+  color: #000;
 }
 
 .heroButton a {

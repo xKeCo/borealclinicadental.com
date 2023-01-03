@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  animation: up-down 1s ease infinite;
+  animation: var(--animation-up-down);
   margin-bottom: 3rem;
   transition: var(--transition);
 }
@@ -55,22 +55,12 @@
 }
 
 .heroButton:hover {
-  background-color: #fff !important;
-  color: #000 !important;
-}
-
-.heroButton a {
-  font-size: 15px;
-  font-weight: 300;
-  color: #fff;
-  text-decoration: none;
-  text-transform: initial;
-  letter-spacing: 0.3px;
-  transition: var(--transition);
+  background-color: #fff;
+  color: #000;
 }
 
 .heroImageContainer {
-  position: static;
+  position: relative;
   width: 100%;
   max-width: 350px;
   text-align: center;
@@ -83,7 +73,6 @@
   width: 100% !important;
   position: relative !important;
   height: unset !important;
-  /* max-width: 1800px; */
   transition: var(--transition);
 }
 
@@ -99,59 +88,7 @@
   transition: var(--transition);
 }
 
-/* Our team */
-
-/* Booking */
-
-.bookingSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #2db97c;
-  padding: 2rem;
-  gap: 1rem;
-  padding: 5rem 0;
-}
-.bookingButton {
-  margin: 12px 0;
-  background-color: #fff !important;
-  color: black !important;
-  border: 2px solid #fff !important;
-  padding: 0 1rem !important;
-  height: auto !important;
-  width: auto !important;
-}
-
-.bookingButton:hover {
-  background-color: #2db97c !important;
-  color: #fff !important;
-}
-
-.bookingText {
-  min-width: 330px;
-}
-
-/* Animations */
-
-@keyframes up-down {
-  0% {
-    transform: translateY(20px);
-  }
-  25% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(20px);
-  }
-}
-
 /* Media Queries */
-
-@media screen and (min-width: 1441px) {
-  /* .heroContainer {
-    justify-content: center;
-  } */
-}
 
 @media screen and (max-width: 1025px) {
   .heroTextMain {
@@ -203,13 +140,13 @@
     font-size: 1.5em;
   }
   .bookingText {
-    min-width: 250px !important;
+    min-width: 250px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .mainTitle {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 }
 

@@ -8,3 +8,4 @@ export * from "./TeamPerson/TeamPerson";
 export * from "./ServicesContainer/ServicesContainer";
 export * from "./Footer/Footer";
 export * from "./TeamContainer/TeamContainer";
+export * from "./BookingSection/BookingSection";

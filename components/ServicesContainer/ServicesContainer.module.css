@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-.cardHeader p {
+.cardHeader__subTitle {
   font-size: 1rem;
   font-weight: 500;
   margin: 0;
@@ -38,8 +38,9 @@
   transition: var(--transition);
 }
 
-.cardHeader h2 {
-  font-size: 2.5rem;
+.cardHeader__title {
+  font-size: clamp(2rem, 2vw, 2.5rem);
+
   font-weight: 800;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -50,11 +51,5 @@
 @media screen and (max-width: 1079px) {
   .servicesCardImage {
     display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .mainTitle {
-    font-size: 2rem !important;
   }
 }
